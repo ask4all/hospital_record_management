@@ -50,9 +50,8 @@ $(document).ready(function() {
     <!--END SLIDE-IN ICONS-->
 
 <!--LOGIN FORM-->
-<form name="login-form" class="login-form" method="post">
+<form name="login-form" class="login-form" method="post" action="/admin/login/?next=/admin/">
 	{% csrf_token %}
-  	{{ form.as_p }}
 
 	<!--HEADER-->
     <div class="header">
