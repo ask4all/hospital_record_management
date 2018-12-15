@@ -5,7 +5,7 @@ from django.utils import timezone
 
 class Cardiology(models.Model):
 	title = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -15,11 +15,11 @@ class Cardiology(models.Model):
 		'''
 			this represent the class object in admin site
 		'''
-		return self.diagonosis
+		return self.title
 
 class Endocrinology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -32,8 +32,8 @@ class Endocrinology(models.Model):
 		return self.diagonosis
 
 class Ae(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -46,8 +46,8 @@ class Ae(models.Model):
 		return self.diagonosis
 
 class Aefobs(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -60,8 +60,8 @@ class Aefobs(models.Model):
 		return self.diagonosis
 
 class Aemaleobs(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -74,8 +74,8 @@ class Aemaleobs(models.Model):
 		return self.diagonosis
 
 class Aepeadons(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -88,8 +88,8 @@ class Aepeadons(models.Model):
 		return self.diagonosis
 
 class Ancclinic(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -102,8 +102,8 @@ class Ancclinic(models.Model):
 		return self.diagonosis
 
 class Cardroom(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -116,8 +116,8 @@ class Cardroom(models.Model):
 		return self.diagonosis
 
 class Casualitytheatre(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -130,8 +130,8 @@ class Casualitytheatre(models.Model):
 		return self.diagonosis
 
 class Deliveries(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -144,8 +144,8 @@ class Deliveries(models.Model):
 		return self.diagonosis
 
 class Dental(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -158,8 +158,8 @@ class Dental(models.Model):
 		return self.diagonosis
 
 class Dermatology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -172,8 +172,8 @@ class Dermatology(models.Model):
 		return self.diagonosis
 
 class Dressingroom(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -186,8 +186,8 @@ class Dressingroom(models.Model):
 		return self.diagonosis
 
 class Ecg(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -200,8 +200,8 @@ class Ecg(models.Model):
 		return self.diagonosis
 
 class Ent(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -214,8 +214,8 @@ class Ent(models.Model):
 		return self.diagonosis
 
 class Femaleobs(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -228,8 +228,8 @@ class Femaleobs(models.Model):
 		return self.diagonosis
 
 class Ffactivities(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -242,8 +242,8 @@ class Ffactivities(models.Model):
 		return self.diagonosis
 
 class Fmw(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -256,8 +256,8 @@ class Fmw(models.Model):
 		return self.diagonosis
 
 class Hts(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -270,8 +270,8 @@ class Hts(models.Model):
 		return self.diagonosis
 
 class Icu(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -284,8 +284,8 @@ class Icu(models.Model):
 		return self.diagonosis
 
 class Immunization(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -298,8 +298,8 @@ class Immunization(models.Model):
 		return self.diagonosis
 
 class Injectionroom(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -312,8 +312,8 @@ class Injectionroom(models.Model):
 		return self.diagonosis
 
 class Inpatients(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -326,8 +326,8 @@ class Inpatients(models.Model):
 		return self.diagonosis
 
 class Kschma(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -340,8 +340,8 @@ class Kschma(models.Model):
 		return self.diagonosis
 
 class Laboratory(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -354,8 +354,8 @@ class Laboratory(models.Model):
 		return self.diagonosis
 
 class Lyingwarda(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -368,8 +368,8 @@ class Lyingwarda(models.Model):
 		return self.diagonosis
 
 class Lyingwardb(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -382,8 +382,8 @@ class Lyingwardb(models.Model):
 		return self.diagonosis
 
 class Maleopd(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -396,8 +396,8 @@ class Maleopd(models.Model):
 		return self.diagonosis
 
 class Mmw(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -410,8 +410,8 @@ class Mmw(models.Model):
 		return self.diagonosis
 
 class Msw(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -424,8 +424,8 @@ class Msw(models.Model):
 		return self.diagonosis
 
 class Neorology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -438,8 +438,8 @@ class Neorology(models.Model):
 		return self.diagonosis
 
 class Neprology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -452,8 +452,8 @@ class Neprology(models.Model):
 		return self.diagonosis
 
 class Newa(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -466,8 +466,8 @@ class Newa(models.Model):
 		return self.diagonosis
 
 class Nhis(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -480,8 +480,8 @@ class Nhis(models.Model):
 		return self.diagonosis
 
 class Nursery(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -494,8 +494,8 @@ class Nursery(models.Model):
 		return self.diagonosis
 
 class Obtetrics(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -508,8 +508,8 @@ class Obtetrics(models.Model):
 		return self.diagonosis
 
 class Opthomology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -522,8 +522,8 @@ class Opthomology(models.Model):
 		return self.diagonosis
 
 class Othopedic(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -536,8 +536,8 @@ class Othopedic(models.Model):
 		return self.diagonosis
 
 class Outpatients(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -550,8 +550,8 @@ class Outpatients(models.Model):
 		return self.diagonosis
 
 class Paed(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -564,8 +564,8 @@ class Paed(models.Model):
 		return self.diagonosis
 
 class Paediatricopd(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -578,8 +578,8 @@ class Paediatricopd(models.Model):
 		return self.diagonosis
 
 class Paediatricsc(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -592,8 +592,8 @@ class Paediatricsc(models.Model):
 		return self.diagonosis
 
 class Physiotheraphy(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -606,8 +606,8 @@ class Physiotheraphy(models.Model):
 		return self.diagonosis
 
 class Pmctc(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -625,8 +625,8 @@ class Pmctc(models.Model):
 		'''
 		return self.diagonosis
 class Psycatrics(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -639,8 +639,8 @@ class Psycatrics(models.Model):
 		return self.diagonosis
 
 class Radiology(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -653,8 +653,8 @@ class Radiology(models.Model):
 		return self.diagonosis
 
 class Reomatism(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -667,8 +667,8 @@ class Reomatism(models.Model):
 		return self.diagonosis
 
 class Sopd(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
@@ -681,8 +681,8 @@ class Sopd(models.Model):
 		return self.diagonosis
 
 class Theatre(models.Model):
-	Diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
-	time = models.DateField(Default = timezone.now)
+	diagonosis = models.CharField(max_length=255, help_text="Enter Your Diag Here")
+	time = models.DateField(default = timezone.now)
 	malea = models.CharField(max_length=255)
 	totala = models.CharField(max_length=25)
 	femaleb = models.CharField(max_length=25)
