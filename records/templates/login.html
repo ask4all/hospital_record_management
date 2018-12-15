@@ -50,7 +50,9 @@ $(document).ready(function() {
     <!--END SLIDE-IN ICONS-->
 
 <!--LOGIN FORM-->
-<form name="login-form" class="login-form" action="validation.html" method="post">
+<form name="login-form" class="login-form" method="post">
+	{% csrf_token %}
+  	{{ form.as_p }}
 
 	<!--HEADER-->
     <div class="header">
