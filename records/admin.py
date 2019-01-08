@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from .models import Cardiology, Endocrinology, Ae, Aefobs, Aemaleobs, Aepeadons, Ancclinic, Cardroom, Casualitytheatre, Deliveries, Dental, Dermatology, Dressingroom, Ecg, Ent, Femaleobs, Ffactivities, Fmw, Hts, Icu, Immunization, Injectionroom, Inpatients, Kschma, Laboratory, Lyingwarda, Lyingwardb, Maleopd, Mmw, Msw, Neorology, Neprology, Newa, Nhis, Nursery, Obtetrics, Opthomology, Othopedic, Outpatients, Paed, Paediatricopd, Paediatricsc, Physiotheraphy, Pmctc, Psycatrics, Radiology, Reomatism, Sopd, Theatre
 
-
+ 
 admin.site.register(Cardiology)
 admin.site.register(Endocrinology)
 admin.site.register(Ae)
@@ -53,5 +53,3 @@ admin.site.register(Radiology)
 admin.site.register(Reomatism)
 admin.site.register(Sopd)
 admin.site.register(Theatre)
-
-

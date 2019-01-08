@@ -5,3 +5,4 @@
 __pycache__
 .ebextensions
 .requirements.txt.bak
+db.sqlite3

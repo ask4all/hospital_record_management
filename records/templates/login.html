@@ -50,31 +50,25 @@ $(document).ready(function() {
     <!--END SLIDE-IN ICONS-->
 
 <!--LOGIN FORM-->
-<form name="login-form" class="login-form" method="post" action="/admin/login/?next=/admin/">
+{% block content %}
+<form name="login-form" class="login-form" method="post">
 	{% csrf_token %}
-
-	<!--HEADER-->
+  {{ form.as_p }}
     <div class="header">
-    <!--TITLE--><h1>Login Here</h1><!--END TITLE-->
-    <!--DESCRIPTION--><span>Fill out the form below to access health record departments.</span><!--END DESCRIPTION-->
+    <h1>Login Here</h1>
+    <span>Fill out the form below to access health record departments.</span>
     </div>
-    <!--END HEADER-->
-
-	<!--CONTENT-->
     <div class="content">
-	<!--USERNAME--><input name="username" type="text" class="input username" value="Username" onfocus="this.value=''" /><!--END USERNAME-->
-    <!--PASSWORD--><input name="password" type="password" class="input password" value="Password" onfocus="this.value=''" /><!--END PASSWORD-->
+<input name="username" type="text" class="input username" value="Username" onfocus="this.value=''" />
+  <input name="password" type="password" class="input password" value="Password" onfocus="this.value=''" />
     </div>
-    <!--END CONTENT-->
 
-    <!--FOOTER-->
     <div class="footer">
-    <!--LOGIN BUTTON--><input type="submit" name="submit" value="Login" class="button" /><!--END LOGIN BUTTON-->
-    <!--REGISTER BUTTON--><input type="submit" name="submit" value="Register" class="register" /><!--END REGISTER BUTTON-->
+  <input type="submit" name="submit" value="Login" class="button" />
+  <input type="submit" name="submit" value="Register" class="register" />
     </div>
-    <!--END FOOTER-->
-
 </form>
+{% endblock %}
 <!--END LOGIN FORM-->
 
 </div>
